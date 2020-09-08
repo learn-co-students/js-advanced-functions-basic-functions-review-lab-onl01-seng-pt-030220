@@ -40,25 +40,32 @@ const Calculator = {
 //     return currentValue
 //   }
 // }
-let actionApplyer = function(start, functions) {
-  let a = start;
-  let i = 0;
-  while (i < functions.length){
-    a = functions[i](a);
-    i++
-  }
-  return a
-}
+// let actionApplyer = function(start, functions) {
+//   let a = start;
+//   let i = 0;
+//   while (i < functions.length){
+//     a = functions[i](a);
+//     i++
+//   }
+//   return a
+// }
 
 /////////////learn co
 
-let actionApplyer = function(start, ray) {
-  let a = start
+// let actionApplyer = function(start, ray) {
+//   let a = start
 
-  for (let i = 0; i < ray.length; i++ ){
-    a = ray[i](a)
-  }
+//   for (let i = 0; i < ray.length; i++ ){
+//     a = ray[i](a)
+//   }
 
-  return a
+//   return a
+// }
+
+function actionApplyer(startNum, array) {
+  let currentNum = startNum
+  array.forEach(fxn => {
+    currentNum = fxn(currentNum)
+  });
+  return currentNum
 }
-
