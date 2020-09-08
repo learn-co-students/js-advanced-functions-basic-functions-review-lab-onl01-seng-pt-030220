@@ -29,14 +29,24 @@ const Calculator = {
   } 
 }
 
-function actionApplyer(startingInteger, array){
-  let currentValue = startingInteger
-  if (array.length === 0){
-    return startingInteger
-  } else {
-    for(let fn of array){
-      currentValue = fn(currentValue)
-    }
-    return currentValue
+// function actionApplyer(startingInteger, array){
+//   let currentValue = startingInteger
+//   if (array.length === 0){
+//     return startingInteger
+//   } else {
+//     for(let fn of array){
+//       currentValue = fn(currentValue)
+//     }
+//     return currentValue
+//   }
+// }
+let actionApplyer = function(start, functions) {
+  let a = start;
+  let i = 0;
+  while (i < functions.length){
+    a = functions[i](a);
+    i++
   }
+  return a
 }
+
