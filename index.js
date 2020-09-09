@@ -19,11 +19,9 @@ const Calculator = {
 }
 
 function actionApplyer(start, array) {
-    if (array.length > 0) {
-         array.forEach(func => {
-            start = func(start)
-            return start
-        })
-    } 
+    array.forEach(func => {
+        start = func(start)
+        return start
+    })
     return start
 }
