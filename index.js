@@ -21,7 +21,6 @@ const Calculator = {
 function actionApplyer(start, array) {
     array.forEach(func => {
         start = func(start)
-        return start
     })
     return start
 }
