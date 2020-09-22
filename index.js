@@ -43,17 +43,12 @@ let Calculator = {
 
 
 function actionApplyer(base, arrayOfFun) {
-  console.log(base)
 
-  console.log(arrayOfFun)
     let result = base
     arrayOfFun.forEach(func => {
 
         return result = func(result) //
 
     })
- console.log(result)
     return result
 }
-
-//(1000+(13*2) )%7 =4
