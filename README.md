@@ -1,6 +1,6 @@
 # JavaScript Advanced Functions: Basic Functions Review
 
-## Learning Goals
+## Learning Goals 
 
 - Define a function using a function declaration
 - Define the term hoisting
