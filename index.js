@@ -21,10 +21,10 @@ function wrapAdjective(flair='*'){
 
 
 let Calculator = {
-  add: ()=>{ return 1 + 3},
-  subtract: function(){ return 1 - 3 },
-  multiply: () => { return 1 * 3},
-  divide: function(){ return 10 / 5 }
+  add: (a, b)=>{ return a + b},
+  subtract: function(a, b){ return a - b},
+  multiply: (a, b) => { return a * b},
+  divide: function(a, b){ return a / b}
 };
 
 
